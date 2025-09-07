@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body class="container">
+    <h1>Turmas</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome da turma</th>
+                <th scope="col">Horário</th>
+                <th scope="col">Dia(s) da semana</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% turmas.forEach(turma=> { %>
+                <tr>
+                    <th scope="row"> <%= turma.id_turma %> </th>
+                    <td> <%= turma.nome_turma %> </td>
+                    <td> <%= turma.horario %> </td>
+                    <td> <%= turma.dias_semana %> </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+
+</html>
