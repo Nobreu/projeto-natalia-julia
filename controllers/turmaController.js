@@ -11,4 +11,5 @@ export const listarTurmas = async (req, res) => {
         console.error('Erro ao listar turmas:', err);
         throw err;
     }
+    // teste
 }
